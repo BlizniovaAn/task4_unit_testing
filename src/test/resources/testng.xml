@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Calculator Suite" parallel="classes" thread-count="1">
+    <test name="Test">
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<include name="P0"/>-->
+            <!--</run>-->
+        <!--</groups>-->
+        <parameter name = "a" value="1"/>
+        <parameter name = "b" value="2"/>
+        <parameter name = "sum" value="3"/>
+        <classes>
+            <class name="com.epam.cdp.testng.sum.SumLongTest"/>
+        </classes>
+        <!--<packages>-->
+        <!--<package name="com.epam.cdp.testng.*" />-->
+        <!--</packages>-->
+    </test>
+</suite>
